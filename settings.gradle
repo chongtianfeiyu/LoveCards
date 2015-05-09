@@ -1,1 +1,1 @@
-include ':app', ':loveCardsMain'
+include ':loveCardsMain'
