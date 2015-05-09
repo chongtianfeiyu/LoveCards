@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/skyblue_logo_wechat" />
+    <item android:drawable="@drawable/skyblue_logo_wechat_checked" android:state_focused="true" />
+    <item android:drawable="@drawable/skyblue_logo_wechat_checked" android:state_pressed="true" />
+</selector>
