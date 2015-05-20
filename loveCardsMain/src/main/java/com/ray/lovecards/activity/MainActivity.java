@@ -6,6 +6,7 @@ import android.view.Window;
 
 import com.ray.api.activity.BaseActivity;
 import com.ray.api.view.SlidingMenu;
+import com.ray.bitmap.RayBitmap;
 import com.ray.lovecards.R;
 
 public class MainActivity extends BaseActivity {
@@ -19,6 +20,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.activity_main);
 
         mLeftMenu = (SlidingMenu) findViewById(R.id.id_menu);
+        RayBitmap bitmp = RayBitmap.openBitmap(mContext);
     }
 
     @Override

@@ -1,1 +1,1 @@
-include ':loveCardsMain', ':rayapi'
+include ':loveCardsMain', ':imageloader_async', ':rayapi'

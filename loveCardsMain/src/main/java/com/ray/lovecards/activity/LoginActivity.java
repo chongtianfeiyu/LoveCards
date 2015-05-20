@@ -1,11 +1,18 @@
 package com.ray.lovecards.activity;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 import com.ray.api.activity.BaseActivity;
+import com.ray.api.utils.ToastUtil;
+import com.ray.api.view.BottomDialog;
 import com.ray.lovecards.R;
 
 /**
@@ -39,9 +46,31 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     public void onClick(View view) {
         if (btnLogin == view) {
-            Intent intent = new Intent(mContext, MainActivity.class);
-            startActivity(intent);
-            finish();
+//            Intent intent = new Intent(mContext, MainActivity.class);
+//            startActivity(intent);
+//            finish();
+
+            BottomDialog.Builder dia = new BottomDialog.Builder(this);
+            dia.setTopButton("Top", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    ToastUtil.getInstance(mContext).showToast("top");
+                }
+            });
+            dia.setCenterButton("Center", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    ToastUtil.getInstance(mContext).showToast("center");
+                }
+            });
+
+            dia.setBottomButton("Bottom", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialogInterface, int i) {
+                    ToastUtil.getInstance(mContext).showToast("bottom");
+                }
+            });
+            dia.show();
         }
     }
 }

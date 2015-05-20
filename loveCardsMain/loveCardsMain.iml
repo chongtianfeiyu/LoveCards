@@ -70,6 +70,7 @@
     <orderEntry type="library" exported="" name="ShareSDK-Wechat-2.6.0" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Wechat-Core-2.6.0" level="project" />
     <orderEntry type="library" exported="" name="ShareSDK-Core-2.6.0" level="project" />
+    <orderEntry type="module" module-name="imageloader_async" exported="" />
     <orderEntry type="module" module-name="rayapi" exported="" />
   </component>
 </module>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LoveCards.iml" filepath="$PROJECT_DIR$/LoveCards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageloader_async/imageloader_async.iml" filepath="$PROJECT_DIR$/imageloader_async/imageloader_async.iml" />
       <module fileurl="file://$PROJECT_DIR$/loveCardsMain/loveCardsMain.iml" filepath="$PROJECT_DIR$/loveCardsMain/loveCardsMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/rayapi/rayapi.iml" filepath="$PROJECT_DIR$/rayapi/rayapi.iml" />
     </modules>
